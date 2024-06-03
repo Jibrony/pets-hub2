@@ -1,10 +1,13 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './Components/js/login.js';
-import Home from './Components/js/home.js';
-import Signup from './Components/js/signup.js';
-import Profile from './Components/js/profile.js';
+import Login from './Components/js/Login.js';
+import Home from './Components/js/Home.js';
+import Signup from './Components/js/SignUp.js';
+import Profile from './Components/js/Profile.js';
+import Vaccines from './Components/js/Vaccines.js';
+import Request from './Components/js/Request.js';
+import Pets from './Components/js/Pets.js';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/vaccines" element={<Vaccines />} />
+        <Route path="/request" element={<Request />} />
+        <Route path="/pets" element={<Pets />} />
       </Routes>
     </Router>
   );

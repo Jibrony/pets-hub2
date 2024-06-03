@@ -1,9 +1,31 @@
+.logo {
+  display: block;
+  margin: 0 auto 1.5rem; /* Centra el logo y añade un margen inferior */
+  width: 70px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: -25px;
+  border-radius: 200px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  padding: 20px; /* Añade un poco de padding */
+  position: relative;
+  z-index: 1; /* Asegura que el contenedor esté por encima del fondo */
+}
+
 .form-container {
-  width: 320px;
+  width: 450px;
   border-radius: 0.75rem;
   background-color: white !important;
   padding: 2rem;
-  color: rgba(243, 244, 246, 1);
+  color: black !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade el sombreado alrededor del contenedor */
+  margin-top: 3.5rem;
 }
 
 .title {
@@ -11,6 +33,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+  margin-bottom: 3rem;
 }
 
 .form {
@@ -29,18 +52,19 @@
   margin-bottom: 4px;
 }
 
-.input-group input {
+.input-username input,
+.input-password input {
   width: 100%;
   border-radius: 0.375rem;
   border: 1px solid rgba(55, 65, 81, 1);
   outline: 0;
   background-color: white !important;
   padding: 0.75rem 1rem;
-  color: rgba(243, 244, 246, 1);
+  color: black !important;
 }
 
 .input-group input:focus {
-  border-color: rgba(167, 139, 250);
+  border-color: rgba(167, 139, 250, 1);
 }
 
 .forgot {
@@ -48,17 +72,19 @@
   justify-content: flex-end;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: rgba(156, 163, 175,1);
+  color: black !important;
   margin: 8px 0 14px 0;
 }
 
-.forgot a,.signup a {
-  color: rgba(243, 244, 246, 1);
+.forgot a,
+.signup a {
+  color: black !important;
   text-decoration: none;
   font-size: 14px;
 }
 
-.forgot a:hover, .signup a:hover {
+.forgot a:hover,
+.signup a:hover {
   text-decoration: underline rgba(167, 139, 250, 1);
 }
 
@@ -91,7 +117,7 @@
   padding-right: 0.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: rgba(156, 163, 175, 1);
+  color: black !important;
 }
 
 .social-icons {
@@ -107,7 +133,7 @@
   margin-left: 8px;
 }
 
-.social-icons .icon svg {
+.social-icons .icon img {
   height: 1.25rem;
   width: 1.25rem;
   fill: #fff;
