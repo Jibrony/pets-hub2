@@ -65,8 +65,9 @@
 }
 
 .seccion-perfil-usuario .perfil-usuario-avatar img {
-    width: 100%;
-    border-radius: var(--button-radius);
+    width: auto;
+    height: 100%;
+    border-radius: 60px;
     position: relative;
 }
 

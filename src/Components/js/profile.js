@@ -24,7 +24,7 @@ const Profile = () => {
                         <div className="perfil-usuario-header">
                             <div className="perfil-usuario-portada">
                                 <div className="perfil-usuario-avatar">
-                                    <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Avatar" />
+                                    <img src={user.foto} alt="Avatar" />
                                     <button type="button" className="boton-avatar">
                                         <i className="far fa-image"></i>
                                     </button>

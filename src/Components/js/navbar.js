@@ -1,14 +1,21 @@
-import Button from 'react-bootstrap/Button';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Logo from './Logo';
-import '../css/Navbar.css'; // Asegúrate de que este archivo esté en la ubicación correcta
+import '../css/Navbar.css';
+import { users } from './Users';
 
 function NavBar() {
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const userId = 1; // Replace with actual user ID fetching logic
+        const user = users.find((u) => u.id === userId);
+        setUser(user);
+    }, []);
     return (
         <div className="navbar-container">
             <Navbar expand="lg" className="bg-body-tertiary mb-3 fixed-top">
@@ -32,8 +39,7 @@ function NavBar() {
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link href="home">Home</Nav.Link>
                                 <Nav.Link href="news">News</Nav.Link>
-                                <img className="profile-picture" src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"></img>
-                                <NavDropdown title="User" id="offcanvasNavbarDropdown-expand-lg" className="dropdown">
+                                <NavDropdown title="user" id="offcanvasNavbarDropdown-expand-lg" className="dropdown">
                                     <NavDropdown.Item href="profile">Profile</NavDropdown.Item>
                                     <NavDropdown.Item href="#action4">Settings</NavDropdown.Item>
                                     <NavDropdown.Divider />
