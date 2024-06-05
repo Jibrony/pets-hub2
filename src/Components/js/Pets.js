@@ -1,13 +1,22 @@
 import React from "react";
 import NavBar from "./Navbar";
+import BackgroundImage from "./Background";
 
-function Pets() {
-    return (
+function PetsCard (){
+    return(
         <div>
-            <NavBar />
-            <h1>Pets</h1>
         </div>
-    );
-};
+    )
+}
+
+function Pets (){
+    return(
+        <div>
+            <NavBar/>
+            <BackgroundImage/>
+
+        </div>
+    )
+}
 
 export default Pets;

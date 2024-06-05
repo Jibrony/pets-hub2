@@ -41,7 +41,6 @@ function NavBar() {
                                 <Nav.Link href="news">News</Nav.Link>
                                 <NavDropdown title="user" id="offcanvasNavbarDropdown-expand-lg" className="dropdown">
                                     <NavDropdown.Item href="profile">Profile</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action4">Settings</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="/">Logout</NavDropdown.Item>
                                 </NavDropdown>

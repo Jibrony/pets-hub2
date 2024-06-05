@@ -7,7 +7,9 @@ import Signup from './Components/js/SignUp.js';
 import Profile from './Components/js/Profile.js';
 import Vaccines from './Components/js/Vaccines.js';
 import Request from './Components/js/Request.js';
+import Adoption from './Components/js/Adoption.js';
 import Pets from './Components/js/Pets.js';
+import MissingPets from './Components/js/MissingPets.js';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/vaccines" element={<Vaccines />} />
         <Route path="/request" element={<Request />} />
         <Route path="/pets" element={<Pets />} />
+        <Route path="/adoption" element={<Adoption />} />
+        <Route path="/missingpets" element={<MissingPets />} />
       </Routes>
     </Router>
   );

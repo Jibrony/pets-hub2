@@ -38,7 +38,7 @@ function Home() {
               <img src="https://nupec.com/wp-content/uploads/2021/08/Captura-de-Pantalla-2021-08-02-a-las-15.11.57.png" alt="Banner 3" />
               <h2>Adopciones</h2>
               <p>Description for Banner 3</p>
-              <Link to="/adopt">
+              <Link to="/adoption">
                 <Button variant="primary">Explore</Button>
               </Link>
             </div>
@@ -46,7 +46,7 @@ function Home() {
               <img src="https://marketplace.canva.com/EAFN6H48baE/1/0/1131w/canva-rojo-y-amarillo-divertido-cartel-de-perro-perdido-Ka0Juu6VELE.jpg" alt="Banner 4" />
               <h2>Reportes desapariciones</h2>
               <p>Description for Banner 4</p>
-              <Link to="/request">
+              <Link to="/missingpets">
                 <Button variant="primary">Explore</Button>
               </Link>            </div>
           </div>

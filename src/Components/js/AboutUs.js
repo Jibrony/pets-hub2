@@ -25,16 +25,16 @@ function AboutUs() {
               <img src="https://cdn.discordapp.com/attachments/1059886544120455309/1245168888484986920/WhatsApp_Image_2024-05-25_at_20.30.52_1.jpeg?ex=66586e25&is=66571ca5&hm=25a4a55c3e88d230b5e44e0394cd8b1f28910c03b3e7caf707ac0c334c014ece&" alt="Integrante 1" />
             </div>
             <div className="member-info">
-              <h3>Jesús Alberto Carballo Caballero</h3>
+              <h3 className='text-center'>Jesús Alberto Carballo Caballero</h3>
               <p>Descripción del Integrante 1</p>
             </div>
           </div>
           <div className="team-member">
             <div className="member-image">
-              <img src="https://cdn.discordapp.com/attachments/1059886544120455309/1245168889747476490/IMG_2035.jpeg?ex=66586e25&is=66571ca5&hm=5899a9d469029a3f88914e5d8cf92c2dc85a1654c7e53a607a808b891ad3686e&" alt="Integrante 2" />
+              <img src="https://i.ibb.co/smbn31B/IMG-2035.jpg" alt="Integrante 2" />
             </div>
             <div className="member-info">
-              <h3>Andrey Julian Gutierrez Arce</h3>
+              <h3 className='text-center'>Andrey Julian Gutierrez Arce</h3>
               <p>Descripción del Integrante 2</p>
             </div>
           </div>
@@ -43,7 +43,7 @@ function AboutUs() {
               <img src="https://cdn.discordapp.com/attachments/1059886544120455309/1245168888899965008/WhatsApp_Image_2024-05-25_at_20.31.45_1.jpeg?ex=66586e25&is=66571ca5&hm=e9f070ec48cf908cf843d09bc2a4b87b55fdbc7b124e4b87ef984fb8ef35a197&" alt="Integrante 3" />
             </div>
             <div className="member-info">
-              <h3>Zulidany Ignacio Sánchez</h3>
+              <h3 className='text-center'>Zulidany Ignacio Sánchez</h3>
               <p>Descripción del Integrante 3</p>
             </div>
           </div>
