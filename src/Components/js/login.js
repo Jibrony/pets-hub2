@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import '../css/Login.css';
 import BackgroundImage from './Background';
 import Logo from './Logo';
 import Navbar from './Navbar';
+import { users } from './Users';
 
 function Login() {
     const [loggedIn, setLoggedIn] = useState(false); // Estado para controlar si el usuario está autenticado
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+        const userId = 2; // Replace with actual user ID fetching logic
+        const user = users.find((u) => u.id === userId);
+        setUser(user);
+        localStorage.setItem('user', JSON.stringify(user));
+    }, []);
 
     // Función para manejar el envío del formulario
     const handleSubmit = (event) => {
@@ -26,6 +35,8 @@ function Login() {
     if (loggedIn) {
         return <Navigate to="/home" replace />;
     }
+
+
     return (
         <>
            <Navbar/>

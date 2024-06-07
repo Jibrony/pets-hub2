@@ -9,9 +9,9 @@ const Profile = () => {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        const userId = 1; // Replace with actual user ID fetching logic
-        const user = users.find((u) => u.id === userId);
-        setUser(user);
+        if(localStorage.getItem('user')) {
+            setUser(JSON.parse(localStorage.getItem('user')));
+        }else(console.log('User not found'));
     }, []);
 
     return (

@@ -12,9 +12,9 @@ function NavBar() {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        const userId = 1; // Replace with actual user ID fetching logic
-        const user = users.find((u) => u.id === userId);
-        setUser(user);
+        if(localStorage.getItem('user')) {
+            setUser(JSON.parse(localStorage.getItem('user')));
+        }else(console.log('User not found'));
     }, []);
     return (
         <div className="navbar-container">
@@ -38,8 +38,8 @@ function NavBar() {
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Nav.Link href="home">Home</Nav.Link>
-                                <Nav.Link href="news">News</Nav.Link>
-                                <NavDropdown title="user" id="offcanvasNavbarDropdown-expand-lg" className="dropdown">
+                                <img src={user?.foto ? user.foto: "https://cdn-icons-png.flaticon.com/512/6326/6326055.png"} className='user-foto'></img>
+                                <NavDropdown title={user?.nombre ? user.nombre: "User"} id="offcanvasNavbarDropdown-expand-lg" className="dropdown">
                                     <NavDropdown.Item href="profile">Profile</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="/">Logout</NavDropdown.Item>

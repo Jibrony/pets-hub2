@@ -16,7 +16,7 @@ export const missingPetsReports = [
     {
       id: 2,
       name: 'Luna',
-      image: 'https://www.purina.es/sites/default/files/styles/square_medium_440x440/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-06Siamese201.jpg?itok=vrGqILTI',
+      image: 'https://t1.ea.ltmcdn.com/es/posts/6/9/0/ejercicios_para_perros_labrador_22096_orig.jpg',
       age: '1 año',
       breed: 'Gato Siames',
       description: 'Luna se extravió cerca de la calle Maple. Es muy tímida y puede estar escondida.',
