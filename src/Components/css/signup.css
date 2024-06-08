@@ -4,6 +4,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-image: url('https://i.ibb.co/Sn9YBC4/fondo-pets-hub.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
 }
 
 /* Estilos para el contenedor de formulario */

@@ -22,7 +22,7 @@ function VaccinesList({ vacuna }) {
             <Card.Title className="text-center">{vacuna.name}</Card.Title>
             <Card.Text>{vacuna.description}</Card.Text>
           </div>
-          <Button variant="primary" className="align-self-center" onClick={handleOpenModal}>Ver</Button> {/* Abrir modal al hacer clic */}
+          <Button id='btn' variant="primary" className="btn-card align-self-center" onClick={handleOpenModal}>Ver</Button> {/* Abrir modal al hacer clic */}
         </Card.Body>
       </Card>
 
@@ -51,7 +51,7 @@ function Vaccines() {
   return (
     <div>
       <Navbar />
-      <BackgroundImage src="https://i.ibb.co/Sn9YBC4/fondo-pets-hub.jpg" />
+      <BackgroundImage src="https://i.ibb.co/D7pVW8y/bg-pethub-2.jpg" />
       <h1 className="vacuna-titulo">VACUNAS</h1>
       <div className="container">
         <div className="row justify-content-center">

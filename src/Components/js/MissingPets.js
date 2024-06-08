@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Navbar from './Navbar';
 import '../css/Pets.css';
 import BackgroundImage from './Background';
+import '../css/Card.css'
 
 const initialReports = [
   {
@@ -76,7 +77,7 @@ function MissingPetCard({ pet }) {
             <Card.Title className="text-center">{pet.name}</Card.Title>
             <div style={statusStyle}>{pet.status}</div>
           </div>
-          <Button variant="primary" className="align-self-center mt-2" onClick={handleOpenModal}>Ver</Button>
+          <Button variant="primary" className="btn-card align-self-center mt-2" onClick={handleOpenModal}>Ver</Button>
         </Card.Body>
       </Card>
 
@@ -216,11 +217,11 @@ function MissingPets() {
   return (
     <div>
       <Navbar />
-      <BackgroundImage src="https://i.ibb.co/Sn9YBC4/fondo-pets-hub.jpg" />
+      <BackgroundImage src="https://i.ibb.co/D7pVW8y/bg-pethub-2.jpg" />
       <h1 className="text-center mt-4 mb-4">REPORTES DE MASCOTAS DESAPARECIDAS</h1>
       <div className="container">
         <div className="text-center mb-4">
-          <Button variant="primary" onClick={handleShowForm}>Generar Reporte</Button>
+          <Button className='btn-card' variant="primary" onClick={handleShowForm}>Generar Reporte</Button>
         </div>
         <div className="row justify-content-center">
           {reports.map((pet) => (
@@ -236,7 +237,7 @@ function MissingPets() {
             <ReportForm addReport={addReport} />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleCloseForm}>Cerrar</Button>
+            <Button className='btn-modal' variant="secondary" onClick={handleCloseForm}>Cerrar</Button>
           </Modal.Footer>
         </Modal>
       </div>

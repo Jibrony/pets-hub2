@@ -7,7 +7,7 @@ export const vaccines = [
     efectosSecundarios: 'Algunos efectos secundarios comunes pueden incluir dolor en el sitio de la inyección, letargo o pérdida de apetito temporal.',
     edadMinima: '12 semanas',
     mascotasAplicacion: 'Perros y gatos',
-    image: 'https://example.com/rabies.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir hinchazón o enrojecimiento en el sitio de la inyección, letargo o fiebre.',
     edadMinima: '6 semanas',
     mascotasAplicacion: 'Perros',
-    image: 'https://example.com/parvovirus.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir dolor o hinchazón en el sitio de la inyección, letargo o fiebre.',
     edadMinima: '8 semanas',
     mascotasAplicacion: 'Gatos',
-    image: 'https://example.com/fiv.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir hinchazón o enrojecimiento en el sitio de la inyección, letargo o fiebre.',
     edadMinima: '6 semanas',
     mascotasAplicacion: 'Perros',
-    image: 'https://example.com/moquillo.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir letargo, fiebre o reacción en el sitio de la inyección.',
     edadMinima: '12 semanas',
     mascotasAplicacion: 'Perros',
-    image: 'https://example.com/leptospirosis.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir secreción nasal, tos leve o fiebre.',
     edadMinima: '6 semanas',
     mascotasAplicacion: 'Perros',
-    image: 'https://example.com/bordetella.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir letargo, fiebre o reacción en el sitio de la inyección.',
     edadMinima: '8 semanas',
     mascotasAplicacion: 'Gatos',
-    image: 'https://example.com/panleucopenia.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir letargo, fiebre o reacción en el sitio de la inyección.',
     edadMinima: '8 semanas',
     mascotasAplicacion: 'Gatos',
-    image: 'https://example.com/calicivirus.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const vaccines = [
     efectosSecundarios: 'Los efectos secundarios pueden incluir letargo, fiebre o reacción en el sitio de la inyección.',
     edadMinima: '8 semanas',
     mascotasAplicacion: 'Gatos',
-    image: 'https://example.com/rinotraqueitis.jpg',
+    image: 'https://salud.edomex.gob.mx/isem/imagenes/temas_programas/t_invernal/vacuna_covid2.png',
   },
   // Agrega más vacunas aquí
 ];

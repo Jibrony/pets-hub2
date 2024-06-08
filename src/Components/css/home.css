@@ -1,3 +1,11 @@
+body{
+  background-image: url('https://i.ibb.co/D7pVW8y/bg-pethub-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .home-container {
   padding-top: 70px; /* Ajusta este valor según la altura de tu navbar */
 }
@@ -10,7 +18,7 @@
   position: relative;
   width: 100%;
   z-index: 1;
-  margin-top: 1900px;
+  margin-top: 2550px;
 }
 
 .bg-container {
@@ -30,14 +38,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px !important;
+    margin-top: 50px !important;
   }
 
   .banner {
     width: 48%;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #FFF;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -60,14 +68,38 @@
     font-size: 16px;
     margin-bottom: 10px;
   }
-  
-  .banner button {
-    background-color: #007bff;
-    color: white;
+
+  .btn-banner {
     border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
+    color: #fff;
+    background-image: linear-gradient(30deg, rgba(55,78,133,1) 0%, rgba(142,70,109,1) 100%);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   .btn-banner:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #8e466d;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(55 78 133 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(55 78 133 / 0%);
+    }
+   }
   
   .banner-left-top {
     order: 1;
@@ -83,6 +115,14 @@
   
   .banner-right-bottom {
     order: 4;
+  }
+
+  .banner-mis-reportes {
+    order: 5;
+  }
+
+  .banner-reporte-maltrato {
+    order: 6;
   }
   
   @media (max-width: 768px) {

@@ -26,7 +26,7 @@ function AboutUs() {
             </div>
             <div className="member-info">
               <h3 className='text-center'>Jesús Alberto Carballo Caballero</h3>
-              <p>Descripción del Integrante 1</p>
+              <p>Backend</p>
             </div>
           </div>
           <div className="team-member">
@@ -35,7 +35,7 @@ function AboutUs() {
             </div>
             <div className="member-info">
               <h3 className='text-center'>Andrey Julian Gutierrez Arce</h3>
-              <p>Descripción del Integrante 2</p>
+              <p>Frontend</p>
             </div>
           </div>
           <div className="team-member">
@@ -44,7 +44,7 @@ function AboutUs() {
             </div>
             <div className="member-info">
               <h3 className='text-center'>Zulidany Ignacio Sánchez</h3>
-              <p>Descripción del Integrante 3</p>
+              <p>Designer</p>
             </div>
           </div>
         </div>

@@ -1,3 +1,11 @@
+/* body{
+  background-image: url('https://i.ibb.co/Sn9YBC4/fondo-pets-hub.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
+
 .logo {
   display: block;
   margin: 0 auto 1.5rem; /* Centra el logo y añade un margen inferior */

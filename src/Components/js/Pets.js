@@ -13,7 +13,7 @@ function Pets (){
     return(
         <div>
             <NavBar/>
-            <BackgroundImage/>
+            <BackgroundImage src="https://i.ibb.co/D7pVW8y/bg-pethub-2.jpg" />
 
         </div>
     )

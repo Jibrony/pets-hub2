@@ -1,27 +1,27 @@
 // carouselimg.js
 const carouselImages = [
     {
-      src: 'https://nupec.com/wp-content/uploads/2020/07/Captura-de-pantalla-2020-07-02-a-las-15.33.21.png',
+      src: 'https://i.ibb.co/2sNqkPY/Pag-1-carousel.png',
       alt: 'First slide',
       caption: {
-        title: 'First slide label',
-        text: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+        title: '',
+        text: ''
       }
     },
     {
-      src: 'https://www.msd-animal-health.es/wp-content/uploads/sites/20/2021/02/noticia_vacunacion1.jpg',
+      src: 'https://i.ibb.co/tzTbXSv/Pag-2-carousel.png',
       alt: 'Second slide',
       caption: {
-        title: 'Second slide label',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        title: '',
+        text: ''
       }
     },
     {
-      src: 'https://nupec.com/wp-content/uploads/2021/08/Captura-de-Pantalla-2021-08-02-a-las-15.11.57.png',
+      src :'https://i.ibb.co/dpLrxJ9/carousel-3.jpg',
       alt: 'Third slide',
       caption: {
-        title: 'Third slide label',
-        text: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
+        title: '',
+        text: ''
       }
     }
   ];

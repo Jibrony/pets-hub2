@@ -37,7 +37,7 @@ export const petsForAdoption = [
       vaccinated: true,
       dewormed: true,
       neutered: true,
-    },
+    }
     // Agrega más mascotas aquí
   ];
   

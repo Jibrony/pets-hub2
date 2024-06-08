@@ -7,7 +7,7 @@ function ExampleCarouselImage({ src, alt }) {
       className="d-block w-100"
       src={src}
       alt={alt}
-      style={{ height: '500px', objectFit: 'cover' }}
+      style={{ height: '550px', objectFit: 'contain' }}
     />
   );
 }

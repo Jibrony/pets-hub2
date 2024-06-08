@@ -1,60 +1,91 @@
-import React, { useState, useEffect } from 'react';
-import '../css/Profile.css';
-import ProfileTool from './ProfileTool';
+import React from 'react';
+import {
+    MDBCol,
+    MDBContainer,
+    MDBRow,
+    MDBCard,
+    MDBCardText,
+    MDBCardBody,
+    MDBCardImage,
+} from 'mdb-react-ui-kit';
 import NavBar from './Navbar';
-import BackgroundImage from './Background';
-import { users } from './Users';
+import '../css/Profile.css';
 
-const Profile = () => {
-    const [user, setUser] = useState(null);
-
-    useEffect(() => {
-        if(localStorage.getItem('user')) {
-            setUser(JSON.parse(localStorage.getItem('user')));
-        }else(console.log('User not found'));
-    }, []);
-
+export default function Profile() {
     return (
         <>
             <NavBar />
-            <BackgroundImage src="https://cdn.discordapp.com/attachments/1061724942523191396/1244827857675489320/dog_22.jpg" />
-            {user && (
-                <div className="perfil-usuario">
-                    <section className="seccion-perfil-usuario">
-                        <div className="perfil-usuario-header">
-                            <div className="perfil-usuario-portada">
-                                <div className="perfil-usuario-avatar">
-                                    <img src={user.foto} alt="Avatar" />
-                                    <button type="button" className="boton-avatar">
-                                        <i className="far fa-image"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="perfil-usuario-body">
-                            <div className="perfil-usuario-bio">
-                                <h3 className="titulo">{user.nombre} {user.primerApellido} {user.segundoApellido}</h3>
-                                <p className="texto">{user.descripcion}</p>
-                            </div>
-                            <div className="perfil-usuario-footer">
-                                <ul className="lista-datos">
-                                    <li><i className="icono fas fa-phone-alt"></i>Telefono: {user.telefono}</li>
-                                    <li><i className="icono fas fa-calendar-alt"></i>Fecha de Nacimiento: {user.fechaNacimiento}</li>
-                                    <li><i className="icono fas fa-share-alt"></i>Red social: {user.redesSociales}</li>
-                                </ul>
-                            </div>
-                            <div className="redes-sociales">
-                                <a href={user.facebook} className="boton-facebook" target="_blank" rel="noopener noreferrer">
-                                    <img className="icon-facebook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/220px-Logo_de_Facebook.png" alt="Facebook" />
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+            <section style={{ backgroundColor: '#FFF', borderRadius: '8px', padding: '20px', marginTop: '50px'}}>
+                <MDBContainer className="py-5">
+                    <MDBRow>
+                        <MDBCol xs="12" sm="6" md="4" lg="4" xl="3">
+                            <MDBCard className="mb-4">
+                                <MDBCardBody className="text-center">
+                                    <MDBCardImage
+                                        src="https://i.ibb.co/smbn31B/IMG-2035.jpg"
+                                        alt="avatar"
+                                        className="rounded-circle"
+                                        style={{ width: '500px' }}
+                                        fluid />
+                                    <p className="text-muted mb-1"></p>
+                                    <p className="text mt-2">Frontend Developer</p>
 
-                </div>
-            )}
+                                </MDBCardBody>
+                            </MDBCard>
+                        </MDBCol>
+                        <MDBCol xs="12" sm="6" md="8" lg="8" xl="9">
+                            <MDBCard className="mb-4">
+                                <MDBCardBody>
+                                    <MDBRow>
+                                        <MDBCol xs="12" sm="6" md="3" lg="3" xl="3">
+                                            <MDBCardText>Name</MDBCardText>
+                                        </MDBCol>
+                                        <MDBCol xs="12" sm="6" md="9" lg="9" xl="9">
+                                            <MDBCardText className="text-muted">Andrey Julian Gutierrez Arce</MDBCardText>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <hr />
+                                    <MDBRow>
+                                        <MDBCol xs="12" sm="6" md="3" lg="3" xl="3">
+                                            <MDBCardText>Email</MDBCardText>
+                                        </MDBCol>
+                                        <MDBCol xs="12" sm="6" md="9" lg="9" xl="9">
+                                            <MDBCardText className="text-muted">andy@example.com</MDBCardText>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <hr />
+                                    <MDBRow>
+                                        <MDBCol xs="12" sm="6" md="3" lg="3" xl="3">
+                                            <MDBCardText>Phone</MDBCardText>
+                                        </MDBCol>
+                                        <MDBCol xs="12" sm="6" md="9" lg="9" xl="9">
+                                            <MDBCardText className="text-muted">(612) 121 3365</MDBCardText>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <hr />
+                                    <MDBRow>
+                                        <MDBCol xs="12" sm="6" md="3" lg="3" xl="3">
+                                            <MDBCardText>Address</MDBCardText>
+                                        </MDBCol>
+                                        <MDBCol xs="12" sm="6" md="9" lg="9" xl="9">
+                                            <MDBCardText className="text-muted">La Paz, B.C.S, MX</MDBCardText>
+                                        </MDBCol>
+                                    </MDBRow>
+                                    <hr />
+                                    <MDBRow>
+                                        <MDBCol xs="12" sm="6" md="3" lg="3" xl="3">
+                                            <MDBCardText>Status</MDBCardText>
+                                        </MDBCol>
+                                        <MDBCol xs="12" sm="6" md="9" lg="9" xl="9">
+                                            <MDBCardText className="text-muted">Admin</MDBCardText>
+                                        </MDBCol>
+                                    </MDBRow>
+                                </MDBCardBody>
+                            </MDBCard>
+                        </MDBCol>
+                    </MDBRow>
+                </MDBContainer>
+            </section>
         </>
     );
-};
-
-export default Profile;
+}
