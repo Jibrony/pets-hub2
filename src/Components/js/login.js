@@ -15,37 +15,37 @@ function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    useEffect(() => {
-        return <Navigate to="/home" replace />;
-    }, [loggedIn]);
+    // useEffect(() => {
+    //     return <Navigate to="/home" replace />;
+    // }, [loggedIn]);
 
-    // useEffect debe escuchar al loggedIn, cuando sea true, dentro del useEfect redirigir a la view
+    // // useEffect debe escuchar al loggedIn, cuando sea true, dentro del useEfect redirigir a la view
 
-    function Usuario() {
-        const URL = 'https://api-pets-production.up.railway.app/login';
-        const data = { email: username, password: password };
+    // function Usuario() {
+    //     const URL = 'https://api-pets-production.up.railway.app/login';
+    //     const data = { email: username, password: password };
 
-        axios.post(URL, data)
-            .then(function (response) {
-                console.log(response.data);
-                if (response.status === 200) {
-                    if (!localStorage.getItem('sesion')) {
-                        localStorage.setItem('sesion', JSON.stringify(data));
-                        setLoggedIn(true);
-                    }
-                } else {
-                    alert('Invalid username or password');
-                }
-            })
-            .catch(function (error) {
-                console.log(error);
-                alert('An error occurred during login');
-            });
-    }
+    //     axios.post(URL, data)
+    //         .then(function (response) {
+    //             console.log(response.data);
+    //             if (response.status === 200) {
+    //                 if (!localStorage.getItem('sesion')) {
+    //                     localStorage.setItem('sesion', JSON.stringify(data));
+    //                     setLoggedIn(true);
+    //                 }
+    //             } else {
+    //                 alert('Invalid username or password');
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //             alert('An error occurred during login');
+    //         });
+    // }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        Usuario();
+      e.preventDefault();
+    //  Usuario();
     };
 
     //  if (loggedIn) {
@@ -55,7 +55,7 @@ function Login() {
     return (
         <>
             <Navbar />
-            <BackgroundImage src="https://i.ibb.co/Sn9YBC4/fondo-pets-hub.jpg" />
+            <BackgroundImage src="https://i.ibb.co/D7pVW8y/bg-pethub-2.jpg" />
 
             <div className="login-container">
                 <div className="form-container">
