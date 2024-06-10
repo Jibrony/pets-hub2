@@ -8,7 +8,7 @@ import { MyPets as initialPets } from './PetsList'; // Asegúrate de que este ar
 import '../css/Pets.css'; // Asegúrate de que el archivo CSS se importe correctamente
 import BackgroundImage from './Background';
 import '../css/Card.css';
-
+//aksbfjakwsdfkawefkawekfgqw
 // Mock function to get user ID. Replace this with actual implementation.
 const getUserID = () => 1;
 
