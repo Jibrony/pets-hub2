@@ -42,7 +42,7 @@ function Banner(){
             <img src="https://marketplace.canva.com/EAFN6H48baE/1/0/1131w/canva-rojo-y-amarillo-divertido-cartel-de-perro-perdido-Ka0Juu6VELE.jpg" alt="Banner 4" />
             <h2>Mis Reportes</h2>
             <p>Mis reportes: Descubre tus reportes de mascotas y vacunas</p>
-            <Link to="/missingpets">
+            <Link to="/myreports">
               <Button className='btn-banner' variant="primary">Explore</Button>
             </Link>            
             </div>

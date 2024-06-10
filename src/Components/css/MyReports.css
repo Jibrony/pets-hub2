@@ -1,0 +1,46 @@
+/* MyReports.css */  
+  .title-report {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content {
+    margin-top: 80px; /* Ajusta según la altura de la barra de navegación y el título */
+  }
+  
+  .table-container {
+    width: 1000px;
+    overflow-x: auto;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa los bordes para una apariencia más limpia */
+    background-color: #f9f9f9; /* Color de fondo de la tabla */
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 8px 10px; /* Ajusta el padding para que la tabla sea más compacta */
+    border: 1px solid #ddd; /* Bordes de las celdas */
+    text-align: left;
+  }
+  
+  .custom-table th {
+    background-color: #000;
+    color: white;
+  }
+  
+  .custom-table tbody tr.even-row {
+    background-color: white; /* Color de fondo para filas pares */
+  }
+  
+  .custom-table tbody tr.odd-row {
+    background-color: #f2f2f2; /* Color de fondo para filas impares */
+  }
+  
+  .custom-table tbody tr:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el ratón sobre una fila */
+  }
+  

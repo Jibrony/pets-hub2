@@ -10,6 +10,7 @@ import Adoption from './Components/js/Adoption.js';
 import Pets from './Components/js/Pets.js';
 import MissingPets from './Components/js/MissingPets.js';
 import ReportAbuse from './Components/js/ReportAbuse.js';
+import MyReports from './Components/js/MyReports.js';
 
 function App() {
   const isAuthenticated = localStorage.getItem('sesion');
@@ -26,8 +27,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/reportabuse" element={<ReportAbuse />}/>
-
+        <Route path="/reportabuse" element={<ReportAbuse />} />
+        <Route path='/myreports' element={<MyReports />} />
         {/* <Route
           path="/signup"
           element={isAuthenticated ? <Navigate to="/home" /> : <Signup />}
